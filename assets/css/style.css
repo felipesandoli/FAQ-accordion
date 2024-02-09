@@ -6,16 +6,34 @@
     --dark-purple: hsl(292, 42%, 14%);
   }
 
-.faqs-container {
-    width: 600px;
-    height: 100vh;
-    transform: translate(-50%, -0%);
+@font-face {
+    font-family: "WorkSans";
+    src: url("../fonts/WorkSans-VariableFont_wght.ttf");
 }
 
-.faqs {
+.faqs-container {
     background-color: var(--light-pink);
-    height: 565px;
     padding: 40px;
     box-shadow: rgba(80, 0, 118, 0.15) 0px 32px 56px 15px;
     border-radius: 16px;
+}
+
+h1 {
+    margin-bottom: 32px !important;
+}
+
+.faq-title {
+    color: var(--dark-purple);
+    font-family: "WorkSans";
+    font-size: 56px;
+    font-weight: bold;
+    padding-left: 24px;
+}
+
+.question {
+    color: var(--dark-purple);
+    font-family: "WorkSans";
+    font-size: 18;
+    font-weight: 600;
+    padding: 24px 0;
 }
