@@ -34,11 +34,20 @@ h1 {
 .question {
     color: var(--dark-purple);
     font-family: "WorkSans";
-    font-size: 18;
+    font-size: 18px;
     font-weight: 600;
     padding: 24px 0;
+    margin: 0 !important;
 }
 
 .faq-item:hover {
     cursor: pointer;
+}
+
+.answer {
+    color: var(--grayish-purple);
+    font-family: "WorkSans";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px !important;
 }
