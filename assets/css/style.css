@@ -4,11 +4,17 @@
     --light-pink: hsl(275, 100%, 97%);
     --grayish-purple: hsl(292, 16%, 49%);
     --dark-purple: hsl(292, 42%, 14%);
+    --pink: rgba(173, 40, 235, 1);
   }
 
 @font-face {
     font-family: "WorkSans";
     src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+.backgroundimage {
+    height: 300px;
+    background-image: url("../images/background-pattern-desktop.svg");
 }
 
 .faqs-container {
@@ -44,10 +50,33 @@ h1 {
     cursor: pointer;
 }
 
+.faq-item:hover .question {
+    color: var(--pink);
+}
+
 .answer {
     color: var(--grayish-purple);
     font-family: "WorkSans";
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 24px !important;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    padding: 30px;
+}
+.attribution a {
+    font-family: "WorkSans";
+    color: var(--pink);
+}
+
+@media screen and (max-width:600px) {
+    .backgroundimage {
+        height: 200px;
+        background-image: url("../images/background-pattern-mobile.svg");
+    }
+    .faqs-container {
+        margin-top: -100px;
+    }
 }
