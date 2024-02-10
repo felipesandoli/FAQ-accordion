@@ -77,6 +77,7 @@ h1 {
         background-image: url("../images/background-pattern-mobile.svg");
     }
     .faqs-container {
+        padding: 24px;
         margin-top: -100px;
     }
 }
